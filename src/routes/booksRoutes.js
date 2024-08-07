@@ -2,9 +2,9 @@ const express = require('express');
 const router = express.Router();
 
 const {
-  getAllBooksController
+  getBooksController
 } = require("../controllers/booksController");
 
-router.get('/books', getAllBooksController);
+router.get('/books', getBooksController);
 
 module.exports = router;
